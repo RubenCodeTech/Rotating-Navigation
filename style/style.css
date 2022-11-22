@@ -1,12 +1,22 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration:none;
+    text-decoration: none;
     list-style-type: none;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
-    background-color: rgb(75, 75, 75);
+    background-color: #333;
+}
+
+p {
+    color: #333;
+    line-height: 1.5;
+}
+
+small {
+    font-style: italic;
 }
 
 .container {
@@ -14,9 +24,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 10%;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 100px;
     padding-bottom: 10%;
     height: 100%;
     transition: transform 1.5s;
@@ -43,7 +53,7 @@ body {
 
 .circle {
     transition-duration: 1s;
-    
+
 }
 
 .circle-container {
@@ -51,7 +61,7 @@ body {
     position: fixed;
     align-items: center;
     justify-content: center;
-    background-color: tomato;
+    background-color: #ff7979;
     width: 200px;
     height: 200px;
     border-radius: 100px;
@@ -79,6 +89,7 @@ body {
 #open {
     position: relative;
     top: 45px;
+    cursor: pointer;
 }
 
 #close {
@@ -86,35 +97,41 @@ body {
     left: 30px;
     top: 70px;
     transform: rotate(-20deg);
+    cursor: pointer;
 }
-.navAppear{
+
+.navAppear {
     transform: translateX(240px);
 }
-nav{
+
+nav {
     transition: 2s;
-    position:fixed ;
+    position: fixed;
     bottom: 0;
-    /* display: none; */
 }
-nav>ul{
-   
+
+nav>ul {
     font-size: 20px;
     padding-left: 20px;
-    padding-bottom: 60px; 
+    padding-bottom: 60px;
 }
-nav>ul>li:first-child{
+
+nav>ul>li:first-child {
     margin-left: 10px;
     margin-left: -240px;
 }
-nav>ul>li:nth-child(2){
+
+nav>ul>li:nth-child(2) {
     margin-top: 30px;
     margin-left: -220px;
 }
-nav>ul>li:nth-child(3){
+
+nav>ul>li:nth-child(3) {
     margin-top: 30px;
     margin-left: -200px;
 }
 
-nav>ul>li,nav>ul>li>a{
+nav>ul>li,
+nav>ul>li>a {
     color: rgb(255, 255, 255);
 }
